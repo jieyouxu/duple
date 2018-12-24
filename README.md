@@ -42,3 +42,7 @@ main() {
   " and ${twoTupleWithSameTypes.item1}");
 }
 ```
+
+### N-Tuples
+
+Currently tuples from 0-tuples to 7-tuples are supported.
