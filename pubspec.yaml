@@ -1,8 +1,10 @@
 name: duple
 description: Minimal tuple library for Dart.
+version: 1.0.0
+author: 许杰友 Jieyou Xu (Joe) <https://github.com/jieyouxu>
 
 environment:
-  sdk: '>=2.1.0 <3.0.0'
+  sdk: '>=2.0.0 <3.0.0'
 
 dev_dependencies:
   test: ^1.0.0
