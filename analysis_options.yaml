@@ -35,6 +35,7 @@ linter:
     - parameter_assignments
     - package_names
     - prefer_const_constructors_in_immutables
+    - prefer_single_quotes
     - prefer_void_to_null
     - sort_pub_dependencies
     - test_types_in_equals
