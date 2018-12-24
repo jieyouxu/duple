@@ -49,29 +49,29 @@ void main() {
 
     describe('instances with different arguments of same types should not be equivalent', () {
       it('should not have equality', () {
-        var oneTupleX = Tuple2<int, String>(2, 'A');
-        var oneTupleY = Tuple2<int, String>(2, 'B');
+        var twoTupleX = Tuple2<int, String>(2, 'A');
+        var twoTupleY = Tuple2<int, String>(2, 'B');
 
-        expect(oneTupleX == oneTupleY, equals(false));
+        expect(twoTupleX == twoTupleY, equals(false));
       });
     });
 
     describe('instances with identical argument types of different order should not be equivalent', () {
       it('should not have equality', () {
-        var oneTupleX = Tuple2<int, int>(2, 3);
-        var oneTupleY = Tuple2<int, int>(3, 2);
+        var twoTupleX = Tuple2<int, int>(2, 3);
+        var twoTupleY = Tuple2<int, int>(3, 2);
 
-        expect(oneTupleX == oneTupleY, equals(false));
+        expect(twoTupleX == twoTupleY, equals(false));
       });
     });
 
     describe('instances with different arguments of different types should not be equivalent', () {
       it('should not have equality', () {
-        var oneTupleX = Tuple2<int, String>(0, 'TUPLE');
-        var oneTupleY = Tuple2<String, int>('TUPLE', 0);
+        var twoTupleX = Tuple2<int, String>(0, 'TUPLE');
+        var twoTupleY = Tuple2<String, int>('TUPLE', 0);
 
         // ignore: unrelated_type_equality_checks
-        expect(oneTupleX == oneTupleY, equals(false));
+        expect(twoTupleX == twoTupleY, equals(false));
       });
     });
   });
