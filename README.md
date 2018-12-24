@@ -38,6 +38,7 @@ main() {
 main() {
   var twoTupleWithSameTypes = Tuple2<int, int>(1, 2);
   var twoTupleWithDifferentTypes = Tuple2<int, String>(1, 'X');
-  print("");
+  print("Two tuple contains ${twoTupleWithSameTypes.item0}, "
+  " and ${twoTupleWithSameTypes.item1}");
 }
 ```
