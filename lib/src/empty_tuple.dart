@@ -1,15 +1,8 @@
-// All empty tuples should be considered identical.
 class EmptyTuple {
   EmptyTuple();
 
   @override
-  bool operator ==(dynamic other) {
-    if (other is! EmptyTuple) {
-      return false;
-    }
-
-    return true;
-  }
+  bool operator ==(Object other) => identical(this, other) || other is EmptyTuple && runtimeType == other.runtimeType;
 
   @override
   int get hashCode => 0;

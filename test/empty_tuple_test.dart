@@ -4,12 +4,47 @@ import 'bdd_test_style.dart';
 
 void main() {
   describe("EmptyTuple", () {
-    it("should create instances that are identical", () {
-      var emptyTuple1 = EmptyTuple();
-      var emptyTuple2 = EmptyTuple();
+    describe("should create instances that are identical", () {
+      var emptyTupleX;
+      var emptyTupleY;
+      var emptyTupleZ;
 
-      expect(emptyTuple1, equals(emptyTuple2));
-      expect(emptyTuple1.hashCode, equals(emptyTuple2.hashCode));
+      setUp(() {
+        emptyTupleX = EmptyTuple();
+        emptyTupleY = EmptyTuple();
+        emptyTupleZ = EmptyTuple();
+      });
+
+      it("should have reflexive equivalence", () {
+        expect(emptyTupleX == emptyTupleX, equals(true));
+      });
+
+      it("should have symmetric equivalence", () {
+        expect(emptyTupleX == emptyTupleY, equals(true));
+        expect(emptyTupleY == emptyTupleX, equals(true));
+
+        expect(emptyTupleX.hashCode, equals(emptyTupleY.hashCode));
+      });
+
+      it("should have transitive equivalence", () {
+        expect(emptyTupleX == emptyTupleY, equals(true));
+        expect(emptyTupleY == emptyTupleZ, equals(true));
+        expect(emptyTupleX == emptyTupleZ, equals(true));
+
+        expect(emptyTupleX.hashCode, equals(emptyTupleY.hashCode));
+        expect(emptyTupleY.hashCode, equals(emptyTupleZ.hashCode));
+        expect(emptyTupleX.hashCode, equals(emptyTupleZ.hashCode));
+      });
+
+      it("should have consistent equivalence", () {
+        for (var i = 0; i < 3; i++) {
+          expect(emptyTupleX == emptyTupleX, equals(true));
+        }
+      });
+
+      it("should return false when comparing with null", () {
+        expect(emptyTupleX == null, equals(false));
+      });
     });
   });
 }
