@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 import 'bdd_test_style.dart';
 
 void main() {
-  describe('Tuple2', () {
+  describe('Tuple3', () {
     describe('instances with identical arguments should be equivalent', () {
       var threeTupleX;
       var threeTupleY;
