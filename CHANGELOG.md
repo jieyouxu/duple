@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Added `Tuple3`, `Tuple4`, `Tuple5`, `Tuple6` and `Tuple7`.
+
 ## 1.2.0
 
 - Added `Tuple2`.
