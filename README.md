@@ -26,8 +26,18 @@ main() {
 
 ```dart
 main() {
-  var oneTupleWithString = Tuple1<String>("hello world!");
+  var oneTupleWithString = Tuple1<String>('hello world!');
   var oneTupleWithInt = Tuple1<int>(1);
   print("One tuple contains ${oneTupleWithInt.item0}");
+}
+```
+
+### Two-Tuple
+
+```dart
+main() {
+  var twoTupleWithSameTypes = Tuple2<int, int>(1, 2);
+  var twoTupleWithDifferentTypes = Tuple2<int, String>(1, 'X');
+  print("");
 }
 ```

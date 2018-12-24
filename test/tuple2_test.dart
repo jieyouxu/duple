@@ -56,6 +56,15 @@ void main() {
       });
     });
 
+    describe('instances with identical argument types of different order should not be equivalent', () {
+      it('should not have equality', () {
+        var oneTupleX = Tuple2<int, int>(2, 3);
+        var oneTupleY = Tuple2<int, int>(3, 2);
+
+        expect(oneTupleX == oneTupleY, equals(false));
+      });
+    });
+
     describe('instances with different arguments of different types should not be equivalent', () {
       it('should not have equality', () {
         var oneTupleX = Tuple2<int, String>(0, 'TUPLE');
