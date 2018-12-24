@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Added `Tuple2`.
+
 ## 1.1.1
 
 - Fixed mutable `Tuple1`.
