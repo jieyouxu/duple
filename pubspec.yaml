@@ -1,0 +1,8 @@
+name: duple
+description: Minimal tuple library for Dart.
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dev_dependencies:
+  test: ^1.0.0
