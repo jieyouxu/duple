@@ -1,5 +1,5 @@
 class Tuple1<T0> {
-  T0 item0;
+  final T0 item0;
 
   Tuple1(this.item0);
 
